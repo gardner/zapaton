@@ -29,6 +29,9 @@ angular
       .when('/cooperativa', {
         templateUrl: 'views/cooperativa.html',
       })
+      .when('/registered', {
+        templateUrl: 'views/registered.html',
+      })
       .when('/red', {
         templateUrl: 'views/red.html',
       })
@@ -62,10 +65,14 @@ angular
       backhaulWikipedia: 'http://en.wikipedia.org/wiki/Backhaul_%28telecommunications%29',
       fresnelWikipedia: 'http://en.wikipedia.org/wiki/Fresnel_zone',
       readMore: 'Read more at',
+      registered: 'You are now registered. We will contact you shortly.',
       referenceMap: 'Reference Map',
       contactLink: 'Contact',
       contact: 'Send us your information and we will contact you personally.',
       otherCoops: 'Existing cooperatives offering internet service:',
+      'Estamos en paso 1': 'We are at step 1',
+      looking: 'We need a minimum of 20 founding members to file the paperwork to gain legal status as a cooperative.',
+      legalBasis: 'Legal Basis',
       law4179: 'Ley 4179 Artículo 4º.- Queda absolutamente prohibido a toda asociación cooperativa realizar cualquier actividad que no se concrete al fomento de los intereses económicos, sociales y culturales de sus asociados. Las cooperativas debidamente registradas gozarán en forma irrestricta de todos los derechos y garantías necesarias para el cumplimiento de sus fines. En consecuencia, serán absolutamente nulos los actos de las entidades privadas o de los órganos públicos que impongan restricciones directas o indirectas a la actividad de esas asociaciones, salvo cuando las disposiciones legales expresamente establezcan esas restricciones. Por tanto, las cooperativas quedan absolutamente libres de cualquier tipo de regulación o control por parte de organismos o instituciones del Estado, autónomas o semiautónomas, que la ley no establezca en forma específica.',
       law8642: 'Law 8642 Articulo 6º section 12 and section 16 defines an operator and a provider as: 12) Operador: persona física o jurídica, pública o privada, que explota redes de telecomunicaciones con la debida concesión o autorización, las cuales podrán prestar o no servicios de telecomunicaciones disponibles al público en general. 16) Proveedor: persona física o jurídica, pública o privada, que proporciona servicios de telecomunicaciones disponibles al público sobre una red de telecomunicaciones con la debida concesión o autorización, según corresponda.',
       coopInfo: 'Law 8642 makes no specific mention of cooperativas or Law 4179. If a cooperative does not offer services to the general public then we do not fall under jurisdiction as an operator.',
@@ -78,6 +85,7 @@ angular
       mapLink: 'Mapa de Cobertura',
       redLink: 'Alto Conceptión',
       equipmentLink: 'los Equipos',
+      'Tell me more': '¡Quiero saber más',
       equipmentText: 'Utilizamos dispositivos inalámbricos de bajo costo que se basan en estándares de la industria para conectar su sitio a la torre en Alto Concepción. Las radios utilizan la misma tecnología que las computadoras portátiles utilizar para conectarse a Wi-Fi. Operan en la banda de 5 GHz ISM menos gente que no requiere una licencia. Las radios tienen muy fuertes antenas parabólicas que se centran la señal para que pueda viajar hasta kilómetros en lugar de metros.',
       toConnect: 'Para conectar su sitio a Alto Concepción necesitará lo que se llama un CPE (Equipo Local del Cliente / Customer Premise Equipment). El CPE más eficaz barata para esta región se denomina AirGrid que cuesta alrededor de $75USD. Este dispositivo tiene que ser instalado en un tejado o un trozo de altura del tubo EMT de acero que se formó de forma segura para que no se mueve en condiciones de fuerte viento. Puede encontrar más información en:',
       Connect: 'Conectar',
@@ -91,12 +99,15 @@ angular
       backhaulWikipedia: 'http://es.wikipedia.org/wiki/Backhaul',
       fresnelWikipedia: 'http://es.wikipedia.org/wiki/Zona_de_Fresnel',
       readMore: 'Leer más en',
+      registered: 'Ya está registrado. Nos pondremos en contacto con usted en breve.',
       referenceMap: 'Mapa de Referencia',
       contactLink: 'Contacténos',
       name: 'nombre',
+      Splendid: '¡Espléndido',
       phone: 'fon',
       contact: 'Envíenos sus datos y nos pondremos en contacto con usted personalmente.',
       otherCoops: 'Ya hay otras cooperativas que estan dando servicios de internet a sus miembres:',
+      legalBasis: 'Base Jurídica',
       law4179: 'Ley 4179 Artículo 4º.- Queda absolutamente prohibido a toda asociación cooperativa realizar cualquier actividad que no se concrete al fomento de los intereses económicos, sociales y culturales de sus asociados. Las cooperativas debidamente registradas gozarán en forma irrestricta de todos los derechos y garantías necesarias para el cumplimiento de sus fines. En consecuencia, serán absolutamente nulos los actos de las entidades privadas o de los órganos públicos que impongan restricciones directas o indirectas a la actividad de esas asociaciones, salvo cuando las disposiciones legales expresamente establezcan esas restricciones. Por tanto, las cooperativas quedan absolutamente libres de cualquier tipo de regulación o control por parte de organismos o instituciones del Estado, autónomas o semiautónomas, que la ley no establezca en forma específica.',
       law8642: 'Law 8642 Articulo 6º section 12 and section 16 defines an operator and a provider as: 12) Operador: persona física o jurídica, pública o privada, que explota redes de telecomunicaciones con la debida concesión o autorización, las cuales podrán prestar o no servicios de telecomunicaciones disponibles al público en general. 16) Proveedor: persona física o jurídica, pública o privada, que proporciona servicios de telecomunicaciones disponibles al público sobre una red de telecomunicaciones con la debida concesión o autorización, según corresponda.',
       coopInfo: 'Law 8642 makes no mention of cooperative organizations. Ley 8642 makes no specific mention of cooperativas or Law 4179. If a cooperative does not offer services to the general public then we do not fall under jurisdiction as an operator.',

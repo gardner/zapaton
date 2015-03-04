@@ -9,7 +9,7 @@
  */
 angular.module('zapatonApp')
   .controller('MainCtrl', function ($translate, $scope, $location) {
-    $scope.preferredLanguage = $translate.preferredLanguage();
+    $scope.preferredLanguage = $translate.use() || $translate.storage().get($translate.storageKey()) || $translate.preferredLanguage();
 
     $scope.setLanguage = function(lang) {
       $translate.preferredLanguage(lang);

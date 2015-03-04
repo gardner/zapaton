@@ -1,11 +1,9 @@
 <h3>{{ 'contact' | translate }}</h3>
 <form action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
-<div class="row">
-  <div class=>
   <label for="subject">{{ 'name' | translate }}</label> <input type=text id="subject" name="subject" /><br />
-</div>
   <label for="email">email</label> <input type=text id="email" name="email" /><br />
   <label for="phone">{{ 'phone' | translate }}</label> <input type=text id="phone" name="phone" /><br />
-  <input type=hidden name="redirect" value="http://zapaton.net/registered" />
-  <input type=hidden name="recipient" value="gardner#zapaton.net" />
+  <input type="hidden" name="redirect" value="http://zapaton.net/#/registered" />
+  <input type="hidden" name="recipient" value="gardner#zapaton.net" />
+  <input type="submit" value="send" />
 </form>

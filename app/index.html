@@ -5,6 +5,7 @@
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
+    <link rel="icon" type="image/png" href="/images/favicon.png">
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.) styles/vendor.css -->
     <!-- bower:css -->
@@ -45,12 +46,12 @@
               <li ng-class="{ active: isActive('/contacto')}"><a ng-href="#/contacto">{{ 'contactLink' | translate }}</a></li>
               <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                  <img ng-src="images/CostaRicaFlag_small.png" alt="Costa Rica Flag" ng-show="'es' == preferredLanguage">
-                  <img ng-src="images/UnitedStatesFlag_small.png" alt="United States Flag" ng-show="'en' == preferredLanguage">
+                  <img src="/images/CostaRicaFlag_small.png" alt="Costa Rica Flag" ng-show="'es' == preferredLanguage">
+                  <img src="/images/UnitedStatesFlag_small.png" alt="United States Flag" ng-show="'en' == preferredLanguage">
                   <span class="caret"></span></a>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a ng-click="setLanguage('es');"><img ng-src="images/CostaRicaFlag_small.png" alt="Costa Rica Flag" ng-click="setLanguage('es');"></a></li>
-                  <li><a ng-click="setLanguage('en');"><img ng-src="images/UnitedStatesFlag_small.png" alt="United States Flag"></a></li>
+                  <li><a ng-click="setLanguage('es');"><img src="images/CostaRicaFlag_small.png" alt="Costa Rica Flag" ng-click="setLanguage('es');"></a></li>
+                  <li><a ng-click="setLanguage('en');"><img src="images/UnitedStatesFlag_small.png" alt="United States Flag"></a></li>
                 </ul>
               </li>
             </ul>

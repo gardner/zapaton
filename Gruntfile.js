@@ -62,7 +62,24 @@ module.exports = function (grunt) {
         ]
       }
     },
-
+    
+    scp: {
+      options: {
+          host: 'zapaton.net',
+          username: 'zapaton',
+          password: process.env.ZAPATON
+      },
+      z: {
+          files: [{
+              cwd: 'dist',
+              src: '**/*',
+              filter: 'isFile',
+              // path on the server 
+              dest: '/home/zapaton/zapaton.net'
+          }]
+      },
+    },
+    
     // The actual grunt server settings
     connect: {
       options: {
@@ -418,6 +435,8 @@ module.exports = function (grunt) {
     'connect:test',
     'karma'
   ]);
+
+  grunt.loadNpmTasks('grunt-scp');
 
   grunt.registerTask('build', [
     'clean:dist',
