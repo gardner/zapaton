@@ -1,9 +1,25 @@
 <h3>{{ 'contact' | translate }}</h3>
-<form action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
-  <label for="subject">{{ 'name' | translate }}</label> <input type=text id="subject" name="subject" /><br />
-  <label for="email">email</label> <input type=text id="email" name="email" /><br />
-  <label for="phone">{{ 'phone' | translate }}</label> <input type=text id="phone" name="phone" /><br />
-  <input type="hidden" name="redirect" value="http://zapaton.net/#/registered" />
-  <input type="hidden" name="recipient" value="gardner#zapaton.net" />
-  <input type="submit" value="send" />
+<form action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" class="span8 form-inline" method="POST">
+  <div class="form-group">
+    <div class="row">
+      <div class="col-xs-3">
+        <label for="realname">{{ 'name' | translate }}</label> <input type=text id="realname" name="realname" /><br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">
+        <label for="email">email</label> <input type=text id="email" name="email" /><br />
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-3">
+        <label for="phone">{{ 'phone' | translate }}</label> <input type=text id="phone" name="phone" /><br />
+      </div>
+    </div>
+
+    <input type="submit" value="OK" />
+    <input type="hidden" name="subject" value="Zapatón.net" />
+    <input type="hidden" name="redirect" value="http://zapaton.net/#/registered" />
+    <input type="hidden" name="recipient" value="gardner#zapaton.net" />
+  </div>
 </form>
