@@ -119,5 +119,5 @@ angular
       lookingFor: 'Estamos buscando a 20 nuevos miembros a unirse a la cooperativa internet Zapatón.' 
       
     });
-      $translateProvider.preferredLanguage('en');
+    $translateProvider.preferredLanguage('es');
   });
